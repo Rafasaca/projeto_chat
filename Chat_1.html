@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/Chat.js"></script>
+    <title>Chat_1</title>
+</head>
+
+<body>
+    <header>
+        <nav class="cabecalho">
+            <h1>Assign</h1>
+            <p class="pr_1">Comunicação</p>
+        </nav>
+        <main>
+            <article>
+                <div class="tela_chat">
+                    <div class="title">Chat</div>
+                    <div id="telaMensagem" class="tela_msg">
+                        
+
+                        <div class="emissor">
+                            <!-- emissor refere-se a outra pessoa que mandou a mensagem -->
+                            <div class="msg">
+                                <!-- todas as mensagens -->
+                                <p>Bom dia, pessoal! Preciso de uma informação, alguém pode ajudar?</p>
+                            </div>
+                        </div>
+                        <br clear="both">
+                        <div class="emissor right">
+                            <div id="emissor" class="msg">
+                                <p>Olá! Posso sim! O que está precisando?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="janela">
+                        <div class="moldura_janela">
+                            <input id="textoEscrito" type="text" placeholder="Escreva" required>
+                            <button onclick="enviarMensagem()">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+    </main>
+        <footer>
+            <div id="rodape">
+                <p id="rodape">Copyright (2022) Assign</p>
+            </div>
+        </footer>
+
+</body>
+
+</html>

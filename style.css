@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* geral */
+.cabecalho {
+    background-color: rgba(76, 117, 117, 0.753);
+    color: #000;
+    background-position: center;
+}
+
+    h1 {
+        font-family: sans-serif;
+        font-size: 20px;
+        padding: 10px;
+    }
+    p {
+        font-family: sans-serif;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+/* index.html */
+.lista a {
+        /*text-decoration: none;*/
+        color: black;
+        
+}
+
+.lista a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.lista a:hover {
+    color: blue:
+}
+
+/* chat_1 */
+.tela_msg {
+    font-family: sans-serif;
+    
+        /* entender o porque nao vai pra direita
+    /*display: right;
+    justify-content: right;
+    align-items: right;
+    min-height: 25px;*/
+}
+
+.tela_chat {
+    width: 400px;
+    padding: 30px;
+    float: center;
+}
+
+.tela_chat .title {
+    background: rgba(79, 168, 27, 0.89);
+    color:whitesmoke;
+    line-height: 2.5;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.tela_chat .tela_msg {
+    border: 1px solid rgba(79, 168, 27, 0.89);
+    padding: 10px 15px;
+    min-height: 500px;
+    max-height: 400px;
+}
+
+.tela_chat .tela_msg .emissor {
+    display: flex;
+    float: left;
+    margin: 10px 0;
+}
+
+.tela_chat .tela_msg .emissor .msg {
+    background: rgba(79, 168, 27, 0.89);
+    color: whitesmoke;
+    border-radius: 10px;
+    width: 150px;
+    margin-left: 10px;
+}
+
+.tela_chat .tela_msg .emissor .msg p {
+    padding: 10px;
+}
+
+.tela_chat .tela_msg .emissor.right {
+    float: right;
+}
+
+.tela_chat .tela_msg .emissor.right .msg {
+    background: #efefef;
+    color: #333;
+}
+
+.tela_chat .janela {
+    width: 100%;
+    background: #efefef;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.tela_chat .janela .moldura_janela {
+    width: 100%;
+    position: relative;  
+}
+
+.tela_chat .janela .moldura_janela input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    padding-right: 70px;
+    font-family: sans-serif;
+    transition: 0.3s all ease;
+}
+
+.tela_chat .janela .moldura_janela input:focus {
+    border-color: #007bff;
+}
+
+.tela_chat .janela .moldura_janela button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 1px solid #007bff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    /*color: #007bff;*/
+    outline: none;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s all ease;
+}
+
+.tela_chat .janela .moldura_janela button:hover {
+background: #007bff;
+color: white;
+}
+
+.tela_chat .janela .moldura_janela input:valid ~ button {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#rodape {
+    background-color: rgba(76, 117, 117, 0.753);
+    color: #000;
+    background-position: center;
+}
